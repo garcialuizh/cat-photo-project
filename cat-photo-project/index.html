@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cat Photo App</title>
+    </head>
+    <body>
+        <hr/>
+        <!-- the content main tag is called NESTING, e mais facil para as SEO ferramentas de pesquisar encontrar! -->
+        <main>
+            <h1>CatPhotoApp</h1>
+            <h2>Cat Photos</h2>
+            <p>
+                See more <a href="">cat photos</a> in our gallery.
+            </p>
+            <img src="images/cat-photo.jpeg" alt="Foto de um Gatinho :D " width="360">
+             <hr/>
+            <section>
+                <h2>Cat List</h2>
+                <h3>Things cats love:</h3>
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <figure>
+                    <img src="images/lasagna-photo.jpg" alt="Hmmmmm!!" width="360">
+                    <figcaption>
+                        Cats <em>love</em> lasagna.
+                    </figcaption>
+                </figure>
+            </section>
+            <hr/>
+            <section>
+                <h3>Top 3 things cats hate</h3>
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+                <figure>
+                    <img src="images/cats-hate-photo.jpg" alt="Grrr!">
+                    <figcaption>
+                        Cats <strong>hate</strong> other cats.
+                    </figcaption>
+                </figure>
+            </section>
+            <hr/>
+            <section>
+                <h2>Cat Form</h2>
+                <form action="https://freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <legend>Is your cat an indoor or outdoor cat?</legend>
+                        <label for="indoor"><input type="radio"id="indoor" name="indoor-outdoor" value="indoor" checked>Indoor:</label>
+                        <label for="outdoor"><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor:</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What's your cat's personality?</legend>
+                        <input id="Loving" type="checkbox" name="personality" value="loving" checked><label for="loving">Loving</label> 
+                        <input  id="lazy" type="checkbox" name="personality" value="lazy"><label for="lazy">Lazy</label>
+                        <input id="energetic" type="checkbox" name="personality" value="energetic"><label for="energetic">Energetic</label>
+                    </fieldset>
+                        <input type="text" name="catphotourl" placeholder="cat photo URL" required> 
+                    <button type="submit">Submit</button>
+                </form> 
+            </section>
+        </main>
+        <footer>
+            <p>No Copyright - <a href="https://github.com/garcialuizh">garcia.dev.com.br</a></p>
+        </footer>
+    </body>
+</html>
